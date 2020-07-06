@@ -189,7 +189,7 @@ class SparkStreamingCreator(Common):
 
 
         undo_commands = []
-        #undo_commands.append('rm -rf %s\n' % '/'.join(app_removal_path))
+        undo_commands.append('rm -rf %s\n' % '/'.join(app_removal_path))
         undo_commands.append('rm -rf %s\n' % remote_component_tmp_path)
         undo_commands.append('rm -rf %s\n' % remote_component_install_path)
         undo_commands.append('rm  %s\n' % service_script_install_path)
